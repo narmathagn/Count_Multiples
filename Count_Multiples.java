@@ -13,9 +13,16 @@ public class Count_Multiples
         {
             a[i]=s.nextInt();
         }
-        for(i=0;i<n;i++)
+	for(i=0;i<n;i++)
+	{
+		if(a[i]==x)
+		{
+			break;
+		}
+	}
+        for(j=i;j<n;j++)
         {
-            if((a[i]%x==0)&&(a[i]>x))
+            if((a[j]%x==0)&&(a[j]>x))
             {
                 c++;
             }
